@@ -5,7 +5,6 @@ import { HeaderComponent } from './header';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from 'src/app/core/auth-guard';
 import { DashboardComponent } from './dashboard/dashboard';
-import { ImportComponent } from './import/import';
 import { AddCategoryComponent } from './add-category/add-category';
 import { AddExpenseComponent } from './add-expense/add-expense';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,7 +22,6 @@ const routes: Routes = [
   declarations: [
     HeaderComponent,
     DashboardComponent,
-    ImportComponent,
     AddCategoryComponent,
     AddExpenseComponent,
   ],
