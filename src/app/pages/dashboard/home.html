@@ -1,0 +1,51 @@
+
+<mat-drawer-container
+  class="dashboard-shell"
+  hasBackdrop="True"
+  autosize
+  style="height: 100vh"
+>
+  <mat-drawer style="height: 100%" #drawer class="dashboard-sidenav" mode="over">
+    <h2 class="sidenav-title">Expense Tracker</h2>
+    <div class="sidenav-actions">
+      <button mat-stroked-button (click)="businessData.onNavigate('dashboard')">
+        <mat-icon>dashboard</mat-icon>Dashboard
+      </button>
+      <button mat-stroked-button (click)="Profile()">
+        <mat-icon>person</mat-icon>Profile
+      </button>
+      <button mat-stroked-button (click)="onAdd()">
+        <mat-icon>add</mat-icon>Add Expense
+      </button>
+      <button mat-flat-button color="primary" (click)="onLogout()">
+        <mat-icon>logout</mat-icon>Logout
+      </button>
+    </div>
+    <div class="sidenav-version">
+      Application Version {{app_version}}
+    </div>
+  </mat-drawer>
+  <div class="topbar-wrap">
+    <mat-toolbar class="topbar">
+      <button
+        mat-icon-button
+        class="menu-btn"
+        (click)="drawer.toggle()"
+        aria-label="Open navigation"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="brand">Expense Tracker</span>
+      <span class="spacer"></span>
+      <button mat-stroked-button class="topbar-logout" (click)="onLogout()">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+    </mat-toolbar>
+  </div>
+  <div class="main-content">
+    <app-view-expenses></app-view-expenses>
+  </div>
+</mat-drawer-container>
+
+

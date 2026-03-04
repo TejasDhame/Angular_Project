@@ -1,0 +1,152 @@
+
+.main {
+  padding: 24px;
+  background: #f8fafc;
+  min-height: calc(100vh - 64px);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.stat-card,
+.chart-card,
+.table-card {
+  margin: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  background: #ffffff;
+}
+
+.stat-card mat-card-content {
+  padding: 14px 16px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.icons {
+  color: #64748b;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.front {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+}
+
+.front1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.chart-card {
+  padding: 6px 4px;
+}
+
+.inline-chart {
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0 4px;
+}
+
+.year-select {
+  margin-bottom: 4px;
+}
+
+.year-select mat-form-field {
+  width: 160px;
+}
+
+.empty-chart {
+  color: #64748b;
+  font-size: 0.9rem;
+  padding: 28px 0 24px;
+  text-align: center;
+}
+
+.table-section {
+  margin-bottom: 14px;
+}
+
+.table-card {
+  overflow: hidden;
+}
+
+.tableContent {
+  padding: 0 8px 4px;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  background: #ffffff;
+}
+
+th.mat-mdc-header-cell {
+  color: #475569;
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+td.mat-mdc-cell {
+  color: #0f172a;
+  font-size: 0.86rem;
+}
+
+tr.mat-mdc-row {
+  cursor: pointer;
+}
+
+tr.mat-mdc-row:hover {
+  background: #f8fafc;
+}
+
+.btns {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 14px;
+  }
+
+  .btns {
+    right: 18px;
+    bottom: 18px;
+  }
+}
+
+
